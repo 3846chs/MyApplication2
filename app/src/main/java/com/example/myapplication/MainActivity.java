@@ -44,12 +44,20 @@ public class MainActivity extends AppCompatActivity {
         EditText editPassword = (EditText) findViewById(R.id.edit_password);
         Button btnLogin = (Button) findViewById(R.id.btn_login);
 
+        // experiment 6
+
         String id = editId.getText().toString();
+
         String password = editPassword.getText().toString();
 
         Intent intent_main = new Intent(this, SubActivity.class);
         intent_main.putExtra("user_info", new Person("홍길동", id, password));
+
+
+
         startActivity(intent_main);
+
+        //experiment 7
 
         Log.v("태그", "사용자가 로그인했습니다.");
 
